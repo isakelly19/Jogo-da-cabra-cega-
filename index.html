@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Cabra Cega</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="tela-inicial">
+  <h1>𝙅𝙤𝙜𝙤 𝙙𝙖 𝙘𝙖𝙗𝙧𝙖 𝙘𝙚𝙜𝙖</h1>
+  <h2>Sera que você consegue vencer com os olhos vendados?</h2>
+  <button class="btn" onclick="iniciarJogo()">Jᴏɢᴀʀ</button>
+</div>
+
+<div id="tela-jogo">
+  <h2>Encontre o alvo usando as setas!</h2>
+  <div id="info-jogo">
+    Nível: <span id="nivel-valor">1</span> |
+    <span id="cronometro" style="display:none;">⏱️ Tempo: <span id="tempo">0</span>s</span>
+  </div>
+  <div id="jogo-area" style="width: 600px; height: 400px;">
+    <div class="player" id="player"></div>
+    <div class="alvo" id="alvo"></div>
+  </div>
+  <div id="dica">Dica: ...</div>
+</div>
+
+<div id="tela-final">
+  <div id="mensagem-final"></div>
+  <button onclick="reiniciarJogo()" class="btn">Jogar Novamente</button>
+</div>
+
+<div id="fase-banner">Fase 1</div>
+
+<script src="script.js"></script>
+</body>
+</html>
